@@ -1,0 +1,6 @@
+{
+  "name": "Staff Attendance App",
+  "description": "Mobile-friendly staff attendance tracking with face verification and geolocation.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
