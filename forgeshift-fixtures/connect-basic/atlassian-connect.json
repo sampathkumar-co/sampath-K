@@ -1,0 +1,20 @@
+{
+  "key": "forgeshift-sample-connect-app",
+  "name": "ForgeShift Sample Connect App",
+  "description": "Public-safe fixture for validating ForgeShift migration assessment behavior.",
+  "baseUrl": "https://example.invalid",
+  "authentication": { "type": "jwt" },
+  "scopes": ["READ", "WRITE"],
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "modules": {
+    "generalPages": [
+      { "key": "sample-page", "url": "/sample", "name": { "value": "Sample" } }
+    ],
+    "webhooks": [
+      { "event": "jira:issue_created", "url": "/webhooks/issue-created" }
+    ]
+  }
+}
